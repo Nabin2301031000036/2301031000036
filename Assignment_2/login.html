@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: #ffffff;
+        }
+
+        .left h1 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        button {
+            padding: 1rem 1rem;
+            margin: 0.5rem 10rem;
+            font-size: 1rem;
+            border: none;
+            /* border-radius: 8px; */
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button {
+            background: #eeeeee;
+            color: black;
+        }
+
+        button:hover {
+            background: #a2a2a2;
+        }
+
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #666;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .right img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <h1>
+            Get Started with Comic Creator
+        </h1>
+
+        <button>
+            Continue with Google
+        </button>
+
+        <button>
+            Continue with Email
+        </button>
+    </div>
+    <div class="right">
+        <img src="assets/logo-transparent.png" alt="">
+        Comic Creator
+    </div>
+</body>
+
+</html>

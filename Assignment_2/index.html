@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Comic Creator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 15px 20px;
+
+        }
+
+        .logo img {
+            height: 100px;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #D9D9D9;
+            display: flex;
+
+        }
+
+        .nav-list li {
+            float: left;
+        }
+
+        .nav-list li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-list li a:hover {
+            background-color: #777;
+            color: white;
+        }
+
+        .nav-list li a.active {
+            background-color: #666666;
+            color: white !important;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 70vh;
+            background-image: url("assets/background.jpg");
+            background-size: cover;
+            background-position: center;
+            color: black;
+            padding: 50px;
+        }
+
+        .box-main {
+            max-width: 600px;
+            margin: 10px;
+        }
+
+        .text-big {
+            font-size: 72px;
+            /* margin: 0; */
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .text-medium {
+            font-size: 48px;
+            margin: 0;
+            margin-bottom: 10px;
+            color: rgba(0, 0, 0, 0.64);
+        }
+
+        .text-small {
+            font-size: 24px;
+            color: rgba(0, 0, 0, 0.64);
+        }
+
+        button {
+            background-color: #666666;
+            text-align: center;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: 20px;
+            border-radius: 0px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #a1a1a1;
+            transform: scale(1.05);
+        }
+
+        .secondsection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .comic-panel img {
+            width: 300px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #666;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="#">
+
+        <nav class="navbar background">
+            <div class="logo">
+                <img src="assets/logo-transparent.png" alt="Logo">
+            </div>
+
+            <ul class="nav-list">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+            <a href="login.html">Login</a>
+            <!-- <a href="comic_reader.html">Comic reader</a> -->
+        </nav>
+
+        <section class="firstsection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <h1 class="text-big" id="web">Comic Creator
+                    </h1>
+                    <p class="text-medium">
+                        Where Stories Come to Life, One Panel at a Time
+                    </p>
+                </div>
+                <button onclick="location.href='Dashboard.html'">Start Creating</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="secondsection" id="about">
+        <div class="comic-panel">
+            <img src="assets/Panel.jpg" alt="Panel">
+        </div>
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    Comic Creator
+                </h1>
+                <p class="text-medium">
+                    Where Stories Come to Life, One Panel at a Time
+                </p>
+
+                <p class="text-small">
+                    Create stunning comics effortlessly with Comic Creator. Drag, drop, and customize characters,
+                    backgrounds, and text to bring your stories to life. Perfect for beginners and pros alike!
+                </p>
+            </div>
+            <button onclick="location.href='Dashboard.html'">Start Creating</button>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
